@@ -46,6 +46,27 @@ export const pageLinks = [
         name: "Tech",
         href: "#tech"
     },
+];
+
+
+
+export const footherLinks = [
+    {
+        header: "Catagory",
+        links: ["News", "World", "Games", "Reference"]
+    },
+    {
+        header: "Apples",
+        links: ["Web", "eCommerce", "Business", "Entertainment", "Portfolio"]
+    },
+    {
+        header: "Cherry",
+        links: ["Media", "Brochure", "Nonprofit", "Education", "Projects"]
+    },
+    {
+        header: "Business",
+        links: ["Information", "Person", "Wiki", "Fourm", "RealProjects"]
+    },
 ]
 
 export const company = [

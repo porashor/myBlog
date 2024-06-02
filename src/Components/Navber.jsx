@@ -23,7 +23,7 @@ const Navber = () => {
             <div className='hidden lg:flex items-center justify-center gap-4'>
                 {navigation.map((item,index)=>(
                     <div key={index}>
-                        <a className='text-2xl hover:text-yellow-600 duration-200 font-semibold' href={item.href}>
+                        <a className='text-2xl hover:text-yellow-600 focus:text-red-600 duration-200 font-semibold' href={item.href}>
                             {item.name}
                         </a>
                     </div>
