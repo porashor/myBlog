@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navber from './Components/Navber'
 import Hero from './Components/Hero'
 import SecNav from './Components/SecNav'
@@ -12,6 +12,9 @@ import Service from './Components/Service'
 
 
 export function Home(){
+  
+
+
   return (
     <div>
       <Hero/>
@@ -20,6 +23,17 @@ export function Home(){
   )
 }
 
+//this is new
+
+
+
+
+
+
+
+
+
+//-----------
 const App = () => {
   return (
     <Router>
