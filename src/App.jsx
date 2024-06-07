@@ -9,6 +9,8 @@ import Layout from './Components/Layout'
 import Contact from './Components/Contact'
 import About from './Components/About'
 import Service from './Components/Service'
+import Login from './Components/Login'
+import Signin from './Components/Signin'
 
 
 export function Home(){
@@ -44,6 +46,8 @@ const App = () => {
           <Route path='/contact' Component={Contact}/>
           <Route path='/about' Component={About}/>
           <Route path='/service' Component={Service}/>
+          <Route path='/login' Component={Login}/>
+          <Route path='/signin' Component={Signin}/>
         </Routes>
       </Layout>
     </Router>

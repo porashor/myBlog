@@ -4,6 +4,7 @@ import Button from './Button'
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { FaX } from 'react-icons/fa6'
 import { BiMenu } from 'react-icons/bi'
+import useAuthintication from '../Hooks/useAuthintication'
 
 const Navber = () => {
     const [show, setShow] = useState(false);
@@ -14,6 +15,9 @@ const Navber = () => {
             setShow(true)
         }
     }
+    const email  = ''
+    const password  = ''
+    const {user, LogOut} = useAuthintication({email, password})
   return (
     <>
     <div className='fixed top-0 left-0 right-0 bg-[#0a022b]/60 backdrop-blur-md text-white grid items-center'>
@@ -32,14 +36,18 @@ const Navber = () => {
                     </div>
                 ))}
             </div>
-            <div className='hidden lg:flex justify-between items-center'>
+            <div className='hidden lg:flex justify-between items-center gap-2'>
                 <div className='flex gap-5 justify-end items-center text-xl'>
-                    <FaFacebook className='hover:text-yellow-800'/>
-                    <FaInstagram className='hover:text-yellow-800'/>
-                    <FaLinkedin className='hover:text-yellow-800'/>
+                    
                 </div>
                 <Button hover className={`border border-neutral-500  hover:border-yellow-800`}>
-                    Log In
+                    <a href="/login">LogIn</a>
+                </Button>
+                <Button hover className={`border border-neutral-500  hover:border-yellow-800`}>
+                    <a href="/signin">SignIn</a>
+                </Button>
+                <Button hover className={`border border-neutral-500  hover:border-yellow-800`}>
+                    <a onClick={LogOut}>SignOut</a>
                 </Button>
             </div>
             <div onClick={handle} className='block lg:hidden '>
@@ -70,7 +78,10 @@ const Navber = () => {
                     <FaLinkedin className='hover:text-yellow-800'/>
                 </div>
                 <Button hover className={`border border-neutral-500 text-white  hover:border-yellow-800`}>
-                    Log In
+                    <a href="/login">LogIn</a>
+                </Button>
+                <Button hover className={`border border-neutral-500 text-white  hover:border-yellow-800`}>
+                    <a href="/signin">Sign in</a>
                 </Button>
             </div>
             </div>
