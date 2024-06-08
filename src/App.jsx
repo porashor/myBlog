@@ -11,6 +11,7 @@ import About from './Components/About'
 import Service from './Components/Service'
 import Login from './Components/Login'
 import Signin from './Components/Signin'
+import Post from './Components/Post'
 
 
 export function Home(){
@@ -48,6 +49,7 @@ const App = () => {
           <Route path='/service' Component={Service}/>
           <Route path='/login' Component={Login}/>
           <Route path='/signin' Component={Signin}/>
+          <Route path='/post/:id' Component={Post}/>
         </Routes>
       </Layout>
     </Router>
